@@ -829,6 +829,75 @@ main {
   line-height: 1.6;
 }
 
+.resume-detail-list {
+  color: var(--light-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  margin-top: 8px;
+}
+
+.resume-detail-list li {
+  list-style: disc;
+  margin-left: 18px;
+}
+
+.project-source-link {
+  color: var(--orange-yellow-crayola);
+  display: inline-block;
+  font-size: var(--fs-7);
+  margin-top: 10px;
+}
+
+.technical-skills { margin-bottom: 30px; }
+
+.tech-stack-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
+  padding: 18px;
+}
+
+.tech-stack-item {
+  align-items: center;
+  background: var(--eerie-black-1);
+  border: 1px solid var(--jet);
+  border-radius: 12px;
+  color: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  font-size: var(--fs-8);
+  font-weight: var(--fw-400);
+  gap: 8px;
+  justify-content: center;
+  min-height: 112px;
+  padding: 12px 8px;
+  text-align: center;
+}
+
+.tech-stack-item img {
+  height: 46px;
+  max-width: 70px;
+  object-fit: contain;
+  width: 46px;
+}
+
+.tech-stack-item img[src*="amazonwebservices"] { max-width: 76px; width: 76px; }
+
+.tech-logo-light { filter: invert(1); }
+
+.technical-summary {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.7;
+  margin-top: 14px;
+}
+
+.technical-summary strong {
+  color: var(--white-2);
+  font-weight: var(--fw-500);
+}
+
 
 /**
  * skills 
@@ -1005,6 +1074,15 @@ main {
   height: 100%;
   object-fit: cover;
   transition: var(--transition-1);
+}
+
+.project-img-placeholder {
+  align-items: center;
+  background: var(--bg-gradient-jet);
+  color: var(--orange-yellow-crayola);
+  display: flex;
+  font-size: 54px;
+  justify-content: center;
 }
 
 .project-item > a:hover img { transform: scale(1.1); }
